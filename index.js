@@ -15,13 +15,5 @@ module.exports = {
     if (type === 'vendor-prefix') {
       return "window.CKEDITOR_BASEPATH = '/assets/ckeditor/';";
     }
-  },
-
-  treeForPublic: function(tree) {
-    return new Funnel(this.project.bowerDirectory + '/ckeditor', {
-      srcDir: '/',
-      // include: ['**/*.woff', '**/stylesheet.css'],
-      destDir: '/assets/ckeditor'
-    });
   }
 };
